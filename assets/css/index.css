@@ -1,5 +1,6 @@
 @import url(./global.css);
 
+
 .header {
     position: relative;
     background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
@@ -18,6 +19,7 @@
 }
 
 .header__content {
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -276,6 +278,54 @@ button:hover {
     background-image: url(../images/UCL-Hover.webp);
 }
 
+@media screen and (max-width: 1140px) {
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .card-offer {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .images-movies {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-offer {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .header-images {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title-header {
+        margin: auto;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 350px;
+    }
+
+    .images-movies {
+        display: grid;
+        grid-template-columns: repeat(6, 100%);
+        overflow-x: auto;
+    }
+}
 
 @keyframes shake {
     0% {
