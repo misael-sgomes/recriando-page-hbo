@@ -1,6 +1,7 @@
 @import url(./global.css);
 
 body {
+    width: 100%;
     display: flex;
     flex-direction: column;
     background-image: url(../images/background-movies-series.png);
@@ -85,6 +86,50 @@ form {
 .form-field::-webkit-input-placeholder {
     color: var(--form-field-placeholder);
     font-size: 1rem;
+}
+
+@media screen and (max-width: 1140px) {
+    body{
+        background-size: 145%;
+        background-repeat: no-repeat;
+    }
+
+    .form-content {
+        margin: 79px auto;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 775px) {
+    .form-content {
+        margin: 79px auto;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .form-content {
+        margin: 79px auto;
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        background-image: none;
+
+    }
+
+    .form-content {
+        margin: 150px auto 80px auto;
+        max-width: 80%;
+        height: 480px;
+    }
+
+    .buttons-login {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 input:invalid {
